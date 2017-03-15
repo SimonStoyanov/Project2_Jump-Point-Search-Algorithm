@@ -7,3 +7,8 @@ Firstly, I will show you the comparision between A* algorithm and JPS algorithm,
 * JPS Algorithm in Baldurs Gate 
 ![](https://harablog.files.wordpress.com/2011/09/bg_jps.png)
 
+You can check out the different types of pathfinding in this website: http://qiao.github.io/PathFinding.js/visual/
+## Optimizations
+To travel long distances, one way to optimize the A* algorithm would be to separate in zones the map and make pathfinding from one zone to another and then, inside the zone, finish the path applying the pathfinding again from the position where you have entered the zone to the destination.
+Since the research is about the implementation of Jump Point search I will be more into the main theme than other optimizations.
+## Algorithm
