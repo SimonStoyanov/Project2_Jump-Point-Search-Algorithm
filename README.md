@@ -38,10 +38,10 @@ Each time we don't find a search node we call the Jump function recursively in t
 
 <a href="https://github.com/SimonStoyanov/Project2_Jump-Point-Search-Algorithm/releases/download/Release/Pathfinding.Optimizations.-.Project.2.Research.zip">Download the exercise and the solution</a>
 
-### Conclusion
+## Conclusion
 The Jump Point Search algorithm can skip lots of nodes in comparison with A*, which can speed up the operations of the pathfinding algorithm in orders of magnitude.
 The algorithm works better on uniform-cost grids.
-### Links of interest
+## Links of interest
 Check the pages down bellow for more information of pathfinding optimizations:
 * <a href="http://www.gdcvault.com/play/1022094/JPS-Over-100x-Faster-than">GDC speech about JPS and JPS + Goal Bounding</a>
 * <a href="http://grastien.net/ban/articles/hg-aaai11.pdf">Daniel Harabor and Alan Grastien's Research on Jump Point Search</a>
