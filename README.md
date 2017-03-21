@@ -1,5 +1,5 @@
 # Project2_Jump-Point-Search-Algorithm
-  The pathfinding algorithm is ubiquitous in videogames, so it is important to know how to apply it to the game and how to optimized. In this research I will cover the optimized method of A* pathfinding algorithm, the Jump Point Search algorithm (JPS), which can speed up A* by orders of magnitude.
+The pathfinding algorithm is ubiquitous in videogames, so it is important to know how to apply it to the game and how to optimized. In this research I will cover the optimized method of A* pathfinding algorithm, the Jump Point Search algorithm (JPS), which can speed up A* by orders of magnitude.
 
 Firstly, I will show you the comparision between A* algorithm and JPS algorithm, so you can figure out that JPS is way better for long distances than A*.
 * A* Algorithm in Baldurs Gate 
@@ -29,9 +29,19 @@ Jump points are interesting because they have neighbours that cannot be reached 
 
 ![](http://i.imgur.com/57oCIRp.png)
 
+The forced neighbour checks are similar to the ones when we first picked neighbors for a new node (Some checks that confirm if the neighbour is walkable). They serve the purpose of detecting when we are allowed to have our assumptions on symmetry.
+
+![](http://i.imgur.com/dmbCYTz.png)
+
+On the diagonal case we have to look not just for forced neighbors in diagonal directions, but in the horizontal and vertical directions as well, and if any of those fail we have to put a forced node as a jump point. We also have to consider a special case of the goal node, where the jump method terminates.
+Each time we don't find a search node we call the Jump function recursively in the specified direction. 
+
 <a href="https://github.com/SimonStoyanov/Project2_Jump-Point-Search-Algorithm/releases/download/Release/Pathfinding.Optimizations.-.Project.2.Research.zip">Download the exercise and the solution</a>
 
+### Conclusion
+The Jump Point Search algorithm can skip lots of nodes in comparison with A*, which can speed up the operations of the pathfinding algorithm in orders of magnitude.
+The algorithm works better on uniform-cost grids.
+### Links of interest
 Check the pages down bellow for more information of pathfinding optimizations:
-
-<a href="http://www.gdcvault.com/play/1022094/JPS-Over-100x-Faster-than">GDC speech about JPS and JPS + Goal Bounding</a>
-<a href="http://grastien.net/ban/articles/hg-aaai11.pdf">Daniel Harabor and Alan Grastien's Research on Jump Point Search</a>
+* <a href="http://www.gdcvault.com/play/1022094/JPS-Over-100x-Faster-than">GDC speech about JPS and JPS + Goal Bounding</a>
+* <a href="http://grastien.net/ban/articles/hg-aaai11.pdf">Daniel Harabor and Alan Grastien's Research on Jump Point Search</a>
