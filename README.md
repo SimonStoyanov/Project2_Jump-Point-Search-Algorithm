@@ -28,3 +28,10 @@ We apply these pruning rules during search as follows: instead of generating eac
 Jump points are interesting because they have neighbours that cannot be reached by an alternative symmetric path: the optimal path must go through the current node.
 
 ![](http://i.imgur.com/57oCIRp.png)
+
+<a href="https://github.com/SimonStoyanov/Project2_Jump-Point-Search-Algorithm/releases/download/Release/Pathfinding.Optimizations.-.Project.2.Research.zip">Download the exercise and the solution</a>
+
+Check the pages down bellow for more information of pathfinding optimizations:
+
+<a href="http://www.gdcvault.com/play/1022094/JPS-Over-100x-Faster-than">GDC speech about JPS and JPS + Goal Bounding</a>
+<a href="http://grastien.net/ban/articles/hg-aaai11.pdf">Daniel Harabor and Alan Grastien's Research on Jump Point Search</a>
